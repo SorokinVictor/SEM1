@@ -1,16 +1,10 @@
-# This is a sample Python script.
+import controller as c
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print('Выберите калькулятор:\n\t 1. рациональный\n\t 2. комплексный\n')
 
+calc = input('Тип калькулятора № ')
+if calc == '1':
+    c.button_click_rac()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print('hello world!')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if calc == '2':
+    c.button_click_complex()
